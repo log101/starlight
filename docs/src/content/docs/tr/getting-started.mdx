@@ -1,21 +1,24 @@
 ---
 title: Başlarken
-description: Sıradaki dokümantasyon site Astro'nun Starlight'ı ile nasıl oluşturacağını öğren.
+description: Gelecek dokümantasyonunu Astro'nun Starlight'ı ile nasıl oluşturacağını öğren
 ---
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-## Yeni Proje Oluşturma
+Startlight [Astro](https://astro.build) çerçevesinin üzerine kurulu oldukça kapsamlı bir dokümantasyon teması.
+Bu rehber yeni bir projeye nasıl başlayacağınızı gösterecek.
+Halihazırdaki bir Astro projenize Startlight'ı eklemek için [elle kurulum aşamalarına](/manual-setup/) bakın.
 
-Starlight, Astro çerçevesi üstüne kurulmuş çok özellikli bir dokümantasyon temasıdır.
+## Hızlı Başlangıç
 
-Aşağıdaki komutları kullanarak yeni bir Astro + Starlight projesi oluşturabilirsin:
+### Yeni bir proje oluşturun
+
+Aşağıdaki komutu kullanarak yeni bir Astro + Starlight projesi oluşturun:
 
 <Tabs>
 <TabItem label="npm">
 
 ```sh
-# npm ile yeni bir proje oluştur
 npm create astro@latest -- --template starlight
 ```
 
@@ -23,7 +26,6 @@ npm create astro@latest -- --template starlight
 <TabItem label="pnpm">
 
 ```sh
-# pnpm ile yeni bir proje oluştur
 pnpm create astro --template starlight
 ```
 
@@ -31,21 +33,57 @@ pnpm create astro --template starlight
 <TabItem label="Yarn">
 
 ```sh
-# yarn ile yeni bir proje oluştur
 yarn create astro --template starlight
 ```
 
 </TabItem>
 </Tabs>
 
-Bu, siten için yapılandırmalar ve tüm gerekli dosyalarla birlikte yeni bir [proje dizini](/tr/guides/project-structure/) oluşturacaktır.
+Bu komut, sitenin çalışması için gereken tüm yapılandırmaları ve gerekli dosyaları içeren yeni bir [proje dizini](/tr/guides/project-structure/) oluşturacaktır.
 
 :::tip[Çalışan haline göz at]
 Starlight'ı tarayıcında dene:
 [StackBlitz'deki taslağı aç](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics).
 :::
 
-## Starlight ile İçerik Oluşturmak
+### Geliştirme sunucusunu başlatın
+
+Kendi bilgisayarında çalışırken [Astro'nun geliştirme sunucusu](https://docs.astro.build/en/reference/cli-reference/#astro-dev)
+çalışmalarınızı ön izlemenizi sağlar ve bir değişiklik yaptığıınızda tarayıcınızı otomatik olarak günceller.
+
+Geliştirme sunucusunu başlatmak için, proje dizinindeyken aşağıdaki komutu çalıştırın:
+
+<Tabs>
+<TabItem label="npm">
+
+```sh
+npm run dev
+```
+
+</TabItem>
+<TabItem label="pnpm">
+
+```sh
+pnpm dev
+```
+
+</TabItem>
+<TabItem label="Yarn">
+
+```sh
+yarn dev
+```
+
+</TabItem>
+</Tabs>
+
+This will log a message to your terminal with the URL of your local preview.
+Open this URL to start browsing your site.
+
+Bu komut terminalinize kendi bilgisayarınızda çalışan ön izlemenizin ağ adresini yazdıracaktır.
+Sitenize göz atmak için adrese tıklayın.
+
+### Starlight ile İçerik Oluşturmak
 
 Starlight, yeni bir içerik eklemen ya da var olan dosyalarını getirmen için hazır!
 
